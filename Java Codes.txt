@@ -1,0 +1,287 @@
+
+package test;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Test {
+
+    public static void main(String[] args) {
+        // 1 - Printing
+//        System.out.print("Hello Java");
+//        System.out.println("Hello Java");
+        
+//=====================================================
+        
+        // 2 - Variables
+//        int x; byte z; long k; float v = 15.2f;
+//        boolean b; char c; String s;
+        
+//=====================================================
+
+        // 3 - Inserting
+//        Scanner cin = new Scanner(System.in);
+//        int x = cin.nextInt();
+//        System.out.println(x);
+//        String s = cin.next();
+//        System.out.println(s);
+        
+//=====================================================
+
+        // 4 - Conditions
+//        int x = cin.nextInt(); 
+//        int y = cin.nextInt(); 
+//        
+//        if(x>y || y==0){
+//           System.out.println("Done"); 
+//        }
+//        else{
+//           System.out.println("Fail"); 
+//        }
+//        
+//        switch(x){
+//            case 1 : System.out.println("1");
+//                break;
+//            case 2 : System.out.println("2");
+//                break;
+//            case 3 : System.out.println("3");
+//                break;
+//            default : System.out.println("Default");
+//        }
+        
+//=====================================================
+
+        // 5 - Looping
+//        for(int i = 0; i<5 ; i++){
+//           System.out.println(i);      
+//        }
+//        
+//        int i = 0;
+//        while(i<5){
+//            System.out.println(i);
+//            i++;
+//        }
+//        
+//        int j = 0;        
+//        do {            
+//            System.out.println(j);
+//            j++;
+//        } while (j<5);
+        
+//=====================================================
+
+        // 6 - Arrays
+//        int[] arr = new int[5];
+//        
+//        for(int i = 0; i<5 ; i++){
+//           arr[i] = cin.nextInt();
+//        }
+//        
+//        for(int i = 0; i<5 ; i++){
+//           System.out.println(arr[i]);      
+//        }
+
+//=====================================================
+
+        // 7 - Functions and exception
+        
+        //out of main :
+//        public static int divide(int x, int y){
+//        if(y==0){
+//            throw new ArithmeticException("can't divide by zero yacta");
+//        }
+//        if(y<0){
+//            throw new ArithmeticException("Negative value yacta");
+//        }
+//        return x/y;
+//    }
+        
+        //inside main :
+//        int x = cin.nextInt();
+//        int y = cin.nextInt();
+//        try{
+//          System.out.println(divide(x,y));
+//        }
+//        catch(Exception e){
+//            System.out.println(e.getMessage());
+//        }
+
+//=====================================================
+
+        // 8 - OOP 
+        //out of main :
+        
+//  //if abstraction : 
+//  //      public abstract class Person{
+//        public class Person{
+//  //if abstraction : 
+//  //              public abstract void test();
+//                protected int age;
+//                protected String name;
+//
+//                public Person(int age, String name) {
+//                    this.age = age;
+//                    this.name = name;
+//                }
+//
+//                public Person() {
+//                }
+//
+//                public void setAge(int age) {
+//                    this.age = age;
+//                }
+//
+//                public void setName(String name) {
+//                    this.name = name;
+//                }
+//
+//                public int getAge() {
+//                    return age;
+//                }
+//
+//                public String getName() {
+//                    return name;
+//                }
+//
+//                public void printInfo(){
+//                System.out.println("Name : " + name);
+//                System.out.println("Age : " + age);
+//                }
+//            } 
+        
+//  // inside main:
+//        Person p = new Person();
+//        p.setName("ahmed");
+//        System.out.println(p.getName());
+//        System.out.println(p.getAge());
+
+//=====================================================
+        // 9 - Interface 
+        //out of main :
+        
+//        public interface VipClient {
+//            void test1();
+//            void test2();
+//        }
+//=====================================================
+        // 10 - Inheritance 
+        //out of main :
+  
+//  //if interface :
+//  //public class Student extends Person implements VipClient{
+//            public class Student extends Person{
+//  //if interface
+//            //    public void test1(){
+//            //        System.out.println("Student test1");
+//            //    }
+//            //    public void test2(){
+//            //        System.out.println("Student test2");
+//            //    }
+//
+//                private float marks;
+//
+//                public Student() {
+//                }
+//
+//                public Student(float marks, int age, String name) {
+//                    super(age, name); //must be the first line in code
+//                    this.marks = marks;
+//                }
+//
+//                public void setMarks(float marks) {
+//                    this.marks = marks;
+//                }
+//
+//                public float getMarks() {
+//                    return marks;
+//                }
+//
+//  //must be added in override instead of virtual
+//                @Override
+//                 public void printInfo(){
+//                    super.printInfo();
+//                    System.out.println("Marks : " + marks);
+//                }
+//
+//            }
+   
+
+//  // inside main:
+//        Student s = new Student();
+//        s.setName("bebo");
+//        s.setAge(22);
+//        s.setMarks(50f);
+//        s.printInfo();
+
+//=====================================================
+//poly : in main 
+
+//    Person x = new Student(30.3f,15,"kkk");
+//    x.printInfo();
+//=====================================================
+        // 11 - Template 
+//        //out of main :  
+//        
+//        public class MyPair<T,T1> {
+//                private T key;
+//                private T1 value;
+//
+//                public MyPair() {
+//                }
+//
+//                public MyPair(T key, T1 value) {
+//                    this.key = key;
+//                    this.value = value;
+//                }
+//
+//                public void setKey(T key) {
+//                    this.key = key;
+//                }
+//
+//                public void setValue(T1 value) {
+//                    this.value = value;
+//                }
+//
+//                public T getKey() {
+//                    return key;
+//                }
+//
+//                public T1 getValue() {
+//                    return value;
+//                }
+//            }
+//        
+//        //Inside main : 
+//        
+////        MyPair<Integer,Float> m = new MyPair<>();
+////        m.setKey(20);
+////        m.setValue(5.6f);
+////        System.out.println(m.getKey());
+////        System.out.println(m.getValue());
+//
+
+//===================================================
+
+//Arraylist
+//ArrayList<Integer> m = new ArrayList<>();
+//m.add(10);
+//m.add(20);
+//m.add(30);
+//m.add(40);
+//m.add(50);
+//
+//for(int i=0;i<m.size();i++){
+//    System.out.println(m.get(i));
+//}
+//
+////foreach
+//for(Integer item:m){
+//   System.out.println(item);
+//}
+
+// integer class
+//    int x = Integer.valueOf("25");
+//    System.out.println(x-5);
+
+    }            
+}
